@@ -189,7 +189,7 @@ async def account_login(bot: Client, m: Message):
     raw_text2 = input2.text
 
     editable4 = await m.reply_text(
-        "Now send the **Thumb url**\nEg : ```https://telegra.ph/file/d9e24878bd4aba05049a1.jpg```\n\nor Send **no**"
+        "Now send the **Thumb url**\nEg : `https://telegra.ph/file/d9e24878bd4aba05049a1.jpg`\n\nor Send **no**"
     )
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
@@ -853,7 +853,7 @@ async def account_login(bot: Client, m: Message):
     raw_text2 = input2.text
 
     editable4 = await m.reply_text(
-        "Now send the **Thumb url**\nEg : ```https://telegra.ph/file/d9e24878bd4aba05049a1.jpg```\n\nor Send **no**"
+        "Now send the **Thumb url**\nEg : `https://telegra.ph/file/d9e24878bd4aba05049a1.jpg`\n\nor Send **no**"
     )
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
@@ -1034,7 +1034,7 @@ async def account_login(bot: Client, m: Message):
     raw_text5 = input5.text    
     
 
-    editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/file/d9e24878bd4aba05049a1.jpg```\n\nor Send **no**")
+    editable4= await m.reply_text("Now send the **Thumb url**\nEg : `https://telegra.ph/file/d9e24878bd4aba05049a1.jpg`\n\nor Send **no**")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
 
@@ -1057,7 +1057,7 @@ async def account_login(bot: Client, m: Message):
             name1 = links[i][0].replace("\t", "").replace("/", "").replace("+", "").replace("#", "").replace("|", "").replace("@","").replace(":","").replace("*","").replace(".","").strip()
                 # await m.reply_text(name +":"+ url)
 
-            # Show = f"**Downloading:-**\n\n**Name :-** ```{name}\nQuality - {raw_text2}```\n\n**Url :-** ```{url}```"
+            # Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`"
             # prog = await m.reply_text(Show)
             # cc = f'>> **Name :** {name}\n>> **Title :** {raw_text0}\n\n>> **Index :** {count}'
 
@@ -1095,7 +1095,7 @@ async def account_login(bot: Client, m: Message):
                 filename = f"{name}.mp4"
                 subprocess.run(f'ffmpeg -i "{filename}" -ss 00:01:00 -vframes 1 "{filename}.jpg"', shell=True)
                 await prog.delete (True)
-                reply = await m.reply_text(f"Uploading - ```{name}```")
+                reply = await m.reply_text(f"Uploading - `{name}`")
                 try:
                     if thumb == "no":
                         thumbnail = f"{filename}.jpg"
